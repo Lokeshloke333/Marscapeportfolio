@@ -40,13 +40,14 @@ CSS INDEX
 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
+  --ttOrange: #F24916;
   --ttRed: #FF0000;
   --ttLightRed: #F2EEEA;
   --ttGray: #B5B5B5;
   --ttGray2: #808080;
   --black: #000;
   --white: #fff;
-  --tt-pink: #F820A3;
+  --tt-pink: #fd5826;
   --tt-gold: #FFA945;
   --tt-gradient-1: linear-gradient(90deg, var(--tt-pink) 0%, var(--tt-gold) 100%);
   --font-inter: "Inter", sans-serif;
@@ -457,7 +458,7 @@ input {
 }
 
 .jo-btn {
-  background: var(--tt-gradient-1);
+  background: linear-gradient(90deg, var(--tt-gold) 0%, var(--tt-pink) 100%);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -475,7 +476,7 @@ input {
   inset: 0;
   border-radius: 6px;
   z-index: -1;
-  background: linear-gradient(90deg, var(--tt-gold) 0%, var(--tt-pink) 100%);
+  background: var(--ttOrange);
   transition: 0.4s ease;
 }
 .jo-btn:hover {
