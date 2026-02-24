@@ -2522,7 +2522,7 @@ input {
 }
 .jo-footer-top {
   padding: 2.76vw 1.563vw;
-  background: linear-gradient(90deg, var(--ttRed), var(--tt-gold));
+  background: linear-gradient(90deg, var(--tt-gold), var(--ttRed));
   border-radius: 0 0 20px 20px;
 }
 @media screen and (max-width: 1199px) {
