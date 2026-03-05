@@ -911,7 +911,7 @@ input {
   z-index: 99;
   inset: 0 6.25vw auto;
   padding: 0 1.563vw;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(75px);
   border-radius: 0px 0px 20px 20px;
   display: flex;
@@ -4804,3 +4804,58 @@ input {
   font-size: 22px;
   padding-top: 3px;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.video-card{
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.video-iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 118%;
+  height: 118%;
+  transform: translate(-50%, -50%);
+  border: none;
+   display:none;
+}
+
+
+.video-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fills the card */
+}
+.play-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: #ff5100;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-btn::before{
+  content: "";
+  border-left: 18px solid white;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  margin-left: 4px;
+}
+
+.play-btn:hover{
+  transform: translate(-50%, -50%) scale(1.1);
+}
